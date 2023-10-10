@@ -1,17 +1,20 @@
+import { useAuth } from './../routes/auth/AuthProvider.jsx';
+
 export const Footer = () => {
+    const auth = useAuth();
+    const textBtn = auth.isAuthenticated ? 'LOGIN' : 'REGISTER';
+    const linkBtn = auth.isAuthenticated ? '/login' : '/register';
+
     return (
         <footer className="footer">
             <nav className="navbar container">
                 <ul className="navbar__item">
                     <li className="navbar__item">
                         <a className="navbar__link" href="./pages/shop.html">SHOP</a>
-                    </li>
+                    </li>                    
                     <li className="navbar__item">
-                        <a className="navbar__link" href="./pages/register.html">REGISTRARSE</a>
-                    </li>
-                    <li className="navbar__item">
-                        <a className="navbar__link" href="./pages/login.html">LOGIN</a>
-                    </li>
+                        <a className="navbar__link" href={linkBtn}>{textBtn}</a>
+                    </li>                    
                     <li className="navbar__item">
                         <a className="navbar__link" href="./pages/contact.html">CONTACTO</a>
                     </li>

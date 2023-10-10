@@ -12,9 +12,16 @@ html {
     color: var(--dark-solid);
 }
 body {
+    display: contents;
     position: relative;
     padding-bottom: var(--spacing-128);
     min-height: 100vh;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+       
 }
 a {
     text-decoration: none;

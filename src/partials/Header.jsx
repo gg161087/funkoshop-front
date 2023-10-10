@@ -1,4 +1,10 @@
+import { useAuth } from './../routes/auth/AuthProvider.jsx';
+
 export const Header = () => {
+    const auth = useAuth();
+    const textBtn = auth.isAuthenticated ? 'LOGIN' : 'REGISTER';
+    const linkBtn = auth.isAuthenticated ? '/login' : '/register';
+    
     return (
         <header className="page-header">
             <nav className="navbar container">
@@ -24,9 +30,9 @@ export const Header = () => {
                     </li>
                     <li className="navbar__item">
                         <a className="navbar__link" href="./pages/contact.html">CONTACTO</a>                    
-                    </li>
+                    </li>                    
                     <li className="navbar__item">
-                        <a className="navbar__link" href="./pages/login.html">LOGIN</a>                    
+                        <a className="navbar__link" href={linkBtn}>{textBtn}</a>                    
                     </li>
                     <li className="navbar__item">
                         <a className="navbar__cart" href="./pages/cart.html"><img src="./img/icons/cart-icon.svg" alt="icono de carrito de compras"/></a>                    
