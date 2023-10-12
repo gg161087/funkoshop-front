@@ -1,4 +1,6 @@
-import { useAuth } from './../routes/auth/AuthProvider.jsx';
+import { useAuth } from '../../routes/auth/AuthProvider.jsx';
+
+import './Header.css';
 
 export const Header = () => {
     const auth = useAuth();

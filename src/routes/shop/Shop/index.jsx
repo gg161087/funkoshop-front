@@ -1,7 +1,7 @@
-import { Header } from '../../partials/Header.jsx';
-import { Footer } from '../../partials/Footer.jsx';
+import { Header } from '../../../components/Header/index.jsx';
+import { Footer } from '../../../components/Footer/index.jsx';
 
-import products from '../../database/products.json';
+import products from '../../../database/products.json';
 
 export const Shop = () => {
     return (

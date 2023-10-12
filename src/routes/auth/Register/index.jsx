@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
-import { Header } from '../../partials/Header.jsx';
-import { Footer } from '../../partials/Footer.jsx';
+import { Header } from '../../../components/Header/index.jsx';
+import { Footer } from '../../../components/Footer/index.jsx';
 
 const apiUrl = 'http://localhost:3000/api';
+
+import './Register.css';
 
 export const Register = () => {   
     const [name, setName] = useState('');

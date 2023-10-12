@@ -1,4 +1,6 @@
-import { useAuth } from './../routes/auth/AuthProvider.jsx';
+import { useAuth } from '../../routes/auth/AuthProvider.jsx';
+
+import './Footer.css';
 
 export const Footer = () => {
     const auth = useAuth();

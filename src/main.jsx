@@ -4,11 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './index.css';
 import { AuthProvider } from './routes/auth/AuthProvider.jsx';
-import { Login } from './routes/auth/Login.jsx';
+import { Login } from './routes/auth/Login/index.jsx';
 import { ProtectedRoute } from './routes/auth/ProtectedRoute.jsx';
-import { Home } from './routes/home/Home.jsx';
-import { Shop } from './routes/shop/Shop.jsx';
-import { Register } from './routes/auth/register';
+import { Home } from './routes/Home/index.jsx';
+import { Shop } from './routes/shop/Shop/index.jsx';
+import { Register } from './routes/auth/Register/index';
 
 const router = createBrowserRouter([
     {

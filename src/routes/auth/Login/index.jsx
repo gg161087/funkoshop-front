@@ -1,10 +1,12 @@
 import  { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 
-import { Header } from '../../partials/Header.jsx';
-import { Footer } from '../../partials/Footer.jsx';
+import { Header } from '../../../components/Header/index.jsx';
+import { Footer } from '../../../components/Footer/index.jsx';
 
 const apiUrl = 'http://localhost:3000/api';
+
+import './Login.css';
 
 export const Login = () => {
     const [formData, setFormData] = useState({

@@ -1,6 +1,8 @@
-import { Card } from './Card.jsx';
+import { Card } from '../Card/index.jsx';
 
-import products from '../database/products.json';
+import products from '../../database/products.json';
+
+import './Slider.css';
 
 export const Slider = () => {    
     return (

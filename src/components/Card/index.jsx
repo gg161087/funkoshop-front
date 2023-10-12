@@ -1,3 +1,5 @@
+import './Card.css';
+
 export const Card = ({product}) => {    
     return (
         <article className="card-item">
